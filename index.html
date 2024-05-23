@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="computer">福岡之旅計算機</div>
+        <p>這邊輸入<input id="ham" type="text"></p>
+
+        <p><input id="count" value="計算中" type="button"></input>
+            總計是 <em id="total"></em>元(台)。
+        </p>
+        <script> document.getElementById('count').onclick = function () {
+                var hamNum = parseInt(document.getElementById('ham').value);
+                var cokeNum = 0.21;
+                document.getElementById('total').textContent = hamNum * cokeNum;
+                console.log(typeof (hamNum * cokeNum));
+            };
+        </script>
+    </div>
+</body>
+
+</html>
