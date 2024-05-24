@@ -7,24 +7,29 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div style="font-size:150px;">
+        <div class="wrap">
 
-        <div class="computer">福岡之旅計算機</div>
-        <p>
-            <font size="7">這邊輸入<input id="ham" type="text"></font>
-        </p>
+            <div class="computer">福岡計算機</div>
 
-        <p>
-            <font size="7"><input id="count" value="計算中" type="button"></input>
-                總計是 <em id="total"></em>元(台)。</font>
-        </p>
-        <script> document.getElementById('count').onclick = function () {
-                var hamNum = parseInt(document.getElementById('ham').value);
-                var cokeNum = 0.21;
-                document.getElementById('total').textContent = hamNum * cokeNum;
-                console.log(typeof (hamNum * cokeNum));
-            };
-        </script>
+            <p>
+                這邊輸入<input id="ham" type="text" style="font-size:50px">
+            </p>
+
+            <p>
+                <input id="count" value="計算中" type="button" style="font-size:150px"></input>
+            </p>
+            <p>
+                總計是 <em id="total"></em>元(台)。
+            </p>
+            <script> document.getElementById('count').onclick = function () {
+                    var hamNum = parseInt(document.getElementById('ham').value);
+                    var cokeNum = 0.21;
+                    document.getElementById('total').textContent = hamNum * cokeNum;
+                    console.log(typeof (hamNum * cokeNum));
+                };
+            </script>
+        </div>
     </div>
 </body>
 
